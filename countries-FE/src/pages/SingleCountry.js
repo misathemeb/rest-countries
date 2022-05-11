@@ -2,9 +2,10 @@
 import React, { useEffect, useState } from 'react';
 import { getCountries } from '../../api/countryFinder';
 import Home from '../../components/Home/home';
-import { useParams, Redirect } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import initialCountries from '../data/initialCountries';
 
-const featureCountry = () => {
+const SingleCountry = () => {
     const [data, setData] = useState;
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
@@ -33,7 +34,7 @@ const featureCountry = () => {
         {data.length ? (
             <div className="grid">
             {data.map((id) => (
-                <featureCountry
+                <SingleCountry
                 key={id}
                 to={`/${id.type.toLowerCase()}/${id}`}
                 className="country"
@@ -53,7 +54,7 @@ const featureCountry = () => {
                         <p>region: {id.region}</p>
                         <p>capital: {id.capital}</p>
                 </article>
-                </featureCountry> // changed from a tag to Link
+                </SingleCountry> // changed from a tag to Link
             ))}
             </div>
         ) : (
@@ -63,4 +64,4 @@ const featureCountry = () => {
     );
     };
 
-    export default featureCountry;
+    export default SingleCountry;

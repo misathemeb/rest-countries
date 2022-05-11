@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import initialCountries from '../../data/initialCountries';
+import SingleCountry from '../../pages/SingleCountry';
 
 const Search = () => {
 

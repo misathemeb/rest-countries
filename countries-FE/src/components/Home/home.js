@@ -1,23 +1,11 @@
 
 import React from 'react';
 
-const Home = ({ image, displayText }) => {
-  const type = ''
-
+const Home = () => {
   return (
-    <div
-      className="home-container"
-      style={{
-        backgroundImage: `url("${
-          image}")
-          `,
-      }}
-    >
-      <h2>{displayText}
-      </h2>
-    </div>
+    <section className='section'>
+      <h2>Home Page</h2>
+    </section>
   );
 };
-
 export default Home;
-
