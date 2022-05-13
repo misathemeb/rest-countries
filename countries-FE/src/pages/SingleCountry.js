@@ -1,9 +1,9 @@
 
 import React, { useEffect, useState } from 'react';
-import { getCountries } from '../../api/countryFinder';
-import Home from '../../components/Home/home';
+import {getCountries} from '../api/countryFinder';
+import Home from '../components/Home/home';
 import { useParams } from 'react-router-dom';
-import initialCountries from '../data/initialCountries';
+
 
 const SingleCountry = () => {
     const [data, setData] = useState;

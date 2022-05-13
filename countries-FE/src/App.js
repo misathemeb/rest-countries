@@ -1,5 +1,6 @@
-import SingleCountry from './pages/feature/singleCountry';
+import SingleCountry from './pages/SingleCountry';
 import Region from './pages/Region';
+import SharedLayout from './pages/SharedLayout';
 import Error from './pages/Error';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Home from './components/Home/home';

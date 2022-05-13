@@ -3,19 +3,19 @@ import Search from '../Search/search';
 import { Link } from 'react-router-dom';
 
 
-const Navigation = () => {
+ const Navigation = () => {
     const [id, type] = useState([]);
   
-    const [token, setToken] = useState('');
+  //   const [token, setToken] = useState('');
 
-  useEffect(() => {
-        // You need to restrict it at some point
-        // This is just dummy code and should be replaced by actual
-        if (!token) {
-            getToken();
-        }
-      }, []);
-    }   
+  // useEffect(() => {
+  //       // You need to restrict it at some point
+  //       // This is just dummy code and should be replaced by actual
+  //       if (!token) {
+  //           getToken();
+  //       }
+  //     }, []);
+   
  
       const getToken = async () => {
         const headers = {
@@ -26,11 +26,11 @@ const Navigation = () => {
           { headers }
         );
         const data = await response.json();
-        setToken(data.access_token);
+        // setToken(data.access_token);
       };
   
       const Navbar = () => {
-        <h3>Filter by Region</h3>
+        // <h3>Filter by Region</h3>
         return (
           <nav className='nav'>
             <Link to='/'>Home</Link>
@@ -42,6 +42,6 @@ const Navigation = () => {
           </nav>
         );
       };
-    
+    }      
 
-      export default Navigation
+export default Navigation;
