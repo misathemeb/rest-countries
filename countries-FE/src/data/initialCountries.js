@@ -5,7 +5,7 @@ const initialCountries = [
         id: 1,
         name: 'USA',
         population: '270000000',
-        region: 'north america',
+        region: 'america',
         subregion: 'america',
         capital: 'washington dc',
         topleveldomain: 'usa',

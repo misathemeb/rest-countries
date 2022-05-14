@@ -29,8 +29,7 @@ import { Link } from 'react-router-dom';
         // setToken(data.access_token);
       };
   
-      const Navbar = () => {
-        // <h3>Filter by Region</h3>
+    
         return (
           <nav className='nav'>
             <Link to='/'>Home</Link>
@@ -42,6 +41,6 @@ import { Link } from 'react-router-dom';
           </nav>
         );
       };
-    }      
+    
 
 export default Navigation;
