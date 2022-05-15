@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Search from '../Search/search';
 import { Link } from 'react-router-dom';
+import SearchBar from '../SearchBar/searchBar';
 
 
  const Navigation = () => {
@@ -31,14 +32,22 @@ import { Link } from 'react-router-dom';
   
     
         return (
+          <> 
           <nav className='nav'>
             <Link to='/'>Home</Link>
+            <br></br>
             <Link to='/africa'>Africa</Link>
+            <br></br>
             <Link to='/america'>America</Link>
+            <br></br>
             <Link to='/asia'>Asia</Link>
+            <br></br>
             <Link to='/europe'>Europe</Link>
+            <br></br>
             <Link to='/oceania'>Oceania</Link>
           </nav>
+          <SearchBar />
+          </>
         );
       };
     

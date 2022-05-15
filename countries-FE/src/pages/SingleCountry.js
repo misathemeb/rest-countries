@@ -1,8 +1,8 @@
 
 import React, { useEffect, useState } from 'react';
 import {getCountries} from '../api/countryFinder';
-import Home from '../components/Home/home';
 import { useParams } from 'react-router-dom';
+import Search from '../components/Search/search';
 
 
 const SingleCountry = () => {
@@ -27,7 +27,7 @@ const SingleCountry = () => {
 
     return (
         <div className="featurePage">
-        <Home />
+        <Search />
         
             <span className="country-label">{type ? `${type}s` : `${id}`}</span>{' '}
 

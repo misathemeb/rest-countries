@@ -1,5 +1,4 @@
 import SingleCountry from './pages/SingleCountry';
-import SharedLayout from './pages/SharedLayout';
 import Error from './pages/Error';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Navigation from './components/Nav/nav';
@@ -13,7 +12,7 @@ function App() {
   return (
   <BrowserRouter>
       <Routes>
-        <Route path='/' element={<SharedLayout />}>
+        <Route path='/' element={<Search />}>
           <Route index element={<Search />} />
         
           {/* <Route path='/:countryId' element={<SingleCountry />} /> */}
