@@ -5,6 +5,7 @@ import Nav from '../Nav/nav';
 import Results from '../Results/results';
 import initialCountries from '../../data/initialCountries';
 import { useParams } from 'react-router-dom';
+import Header from '../Header/Header';
 
 const Search = () => {
 
@@ -21,6 +22,7 @@ const Search = () => {
 
   return (
     <>
+      <Header />
       <Nav />
       <Results results={filteredList}/>
     </>

@@ -1,9 +1,7 @@
-import SingleCountry from './pages/SingleCountry';
+
 import Error from './pages/Error';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
-import Navigation from './components/Nav/nav';
 import Search from './components/Search/search';
-import SharedCountriesLayout from './pages/SharedCountriesLayout';
 import './App.css';
 import React, {useState} from 'react';
 
