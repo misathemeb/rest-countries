@@ -3,18 +3,18 @@ import React from "react";
 import './result.css';
 
  const Result = (props) => {
-
+    const {id, name, population, region, capital, subregion} = props;
 
 
  return (
      <div className="single-result">
-        <h2>{props.id}</h2>
+        <h2>{id}</h2>
         <ul>
-            <li>Native Name:{props.name}</li>
-            <li>Population:{props.population}</li>
-            <li>Region:{props.region}</li>
-            <li>Capital:{props.capital}</li>
-            <li>Subregion:{props.subregion}</li>
+            <li>Native Name:{name}</li>
+            <li>Population:{population}</li>
+            <li>Region:{region}</li>
+            <li>Capital:{capital}</li>
+            <li>Subregion:{subregion}</li>
         </ul>
      </div>
  )
