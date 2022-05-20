@@ -1,24 +1,21 @@
 
-
-header {
+.Title, .nav  {
+    padding: 1.5em 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-.Title, .nav {
-    padding: 1.5em 3em;
-    text-decoration: none;
     
+h1 {
+    padding: 0 0.5em;
 }
 
-.search-form {
-    padding: .5em;
-    margin: 0 auto;
+a.nav {
+    text-decoration: none;
 }
 
-.search {
-    padding: 0.5em;
-    border-radius: 8px;
-    border: 1px solid gray;
+a.title {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
 }

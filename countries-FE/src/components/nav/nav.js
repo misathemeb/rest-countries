@@ -46,7 +46,6 @@ import SearchBar from '../SearchBar/searchBar';
             <br></br>
             <Link to='/oceania'>Oceania</Link>
           </nav>
-          <SearchBar />
           </>
         );
       };

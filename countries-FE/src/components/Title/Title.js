@@ -8,7 +8,9 @@ const Title = () => {
 
     return (
         <>
-        <h1>Where in the world?</h1>
+        <a href="/" className='title'>
+            <h1>Where in the world?</h1>
+        </a>
         </>
     )
 }

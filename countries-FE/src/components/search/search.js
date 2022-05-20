@@ -5,6 +5,8 @@ import Results from '../Results/results';
 import initialCountries from '../../data/initialCountries';
 import { useParams } from 'react-router-dom';
 import Header from '../Header/header';
+import SearchBar from '../SearchBar/searchBar';
+
 
 const Search = () => {
 
@@ -22,6 +24,7 @@ const Search = () => {
   return (
     <>
       <Header />
+      <SearchBar />
       <Results results={filteredList}/>
     </>
   );

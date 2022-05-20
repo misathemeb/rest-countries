@@ -53,7 +53,7 @@ const initialCountries = [
         population: '1000000',
         region: 'asia',
         subregion: 'se asia',
-        capital: 'toyko',
+        capital: 'tokyo',
         topleveldomain: 'jp',
         currencies: 'jp yen',
         languages: 'japanese'
