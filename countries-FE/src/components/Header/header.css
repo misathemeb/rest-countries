@@ -1,0 +1,24 @@
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Title, .nav {
+    padding: 1.5em 3em;
+    text-decoration: none;
+    
+}
+
+.search-form {
+    padding: .5em;
+    margin: 0 auto;
+}
+
+.search {
+    padding: 0.5em;
+    border-radius: 8px;
+    border: 1px solid gray;
+}

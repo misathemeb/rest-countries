@@ -18,11 +18,9 @@ const SearchBar = () => {
 
   return (
     
-    <form  className="search-form">
-      <input type="text" className="search"  />
-      <button type="submit" className="search-button">
-        🔎 Search for a country
-      </button>
+    <form  className="search-form"  >
+      <input type="text" className="search" placeholder='🔎 Search for a country'  />
+    
     </form>
     
   );

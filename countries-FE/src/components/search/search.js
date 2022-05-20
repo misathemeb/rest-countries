@@ -1,11 +1,10 @@
 
 import React, { useState } from 'react';
 import SingleCountry from '../../pages/SingleCountry';
-import Nav from '../Nav/nav';
 import Results from '../Results/results';
 import initialCountries from '../../data/initialCountries';
 import { useParams } from 'react-router-dom';
-import Header from '../Header/Header';
+import Header from '../Header/header';
 
 const Search = () => {
 
@@ -23,7 +22,6 @@ const Search = () => {
   return (
     <>
       <Header />
-      <Nav />
       <Results results={filteredList}/>
     </>
   );

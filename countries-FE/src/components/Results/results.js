@@ -1,6 +1,7 @@
 
 import Result from "../Result/result";
 import React from 'react';
+import CardWrap from "../CardWrap/ cardWrap";
 
 
 const Results = (props) => {
@@ -17,6 +18,8 @@ const Results = (props) => {
 
     return (
         <>
+            <CardWrap />
+
             {list}
         </>
     )

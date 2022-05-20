@@ -34,7 +34,7 @@ import SearchBar from '../SearchBar/searchBar';
         return (
           <> 
           <nav className='nav'>
-            <Link to='/'>Home</Link>
+            <Link to='/'>Filter by Region</Link>
             <br></br>
             <Link to='/africa'>Africa</Link>
             <br></br>
