@@ -36,15 +36,15 @@ import SearchBar from '../SearchBar/searchBar';
           <nav className='nav'>
             <Link to='/'>Filter by Region</Link>
             <br></br>
-            <Link to='/africa'>Africa</Link>
+            <Link to='/region/africa'>Africa</Link>
             <br></br>
-            <Link to='/america'>America</Link>
+            <Link to='/region/america'>America</Link>
             <br></br>
-            <Link to='/asia'>Asia</Link>
+            <Link to='/region/asia'>Asia</Link>
             <br></br>
-            <Link to='/europe'>Europe</Link>
+            <Link to='/region/europe'>Europe</Link>
             <br></br>
-            <Link to='/oceania'>Oceania</Link>
+            <Link to='/region/oceania'>Oceania</Link>
           </nav>
           </>
         );

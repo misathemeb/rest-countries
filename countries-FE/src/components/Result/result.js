@@ -7,14 +7,14 @@ import './result.css';
 
 
  return (
-     <div className="single-result">
+     <div className="result">
         <h2>{id}</h2>
-        <ul>
-            <li>Native Name:{name}</li>
-            <li>Population:{population}</li>
-            <li>Region:{region}</li>
-            <li>Capital:{capital}</li>
-            <li>Subregion:{subregion}</li>
+        <ul className="country-facts">
+            <li className="country-fact"><span className="country-fact-label">Native Name:</span>{name}</li>
+            <li className="country-fact"><span className="country-fact-label">Population:</span>{population}</li>
+            <li className="country-fact"><span className="country-fact-label">Region:</span>{region}</li>
+            <li className="country-fact"><span className="country-fact-label">Capital:</span>{capital}</li>
+            <li className="country-fact"><span className="country-fact-label">Subregion:</span>{subregion}</li>
         </ul>
      </div>
  )

@@ -1,7 +1,7 @@
 
 import Result from "../Result/result";
 import React from 'react';
-import CardWrap from "../CardWrap/ cardWrap";
+
 import './results.css';
 
 
@@ -23,7 +23,6 @@ const Results = (props) => {
 
     return (
         <div className="results-wrap">
-            <CardWrap />
 
             {list}
         </div>

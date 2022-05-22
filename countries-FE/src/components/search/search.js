@@ -3,23 +3,32 @@ import React, { useState } from 'react';
 import SingleCountry from '../../pages/SingleCountry';
 import Results from '../Results/results';
 import initialCountries from '../../data/initialCountries';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import Header from '../Header/header';
 import SearchBar from '../SearchBar/searchBar';
 
 
 const Search = () => {
 
-  // const [searchField, setSearchField] = useState(' ');
-  const {region} = useParams();
+  const [searchField, setSearchField] = useState(' ');
+  const {region, search} = useParams();
   
 
-  let filteredList = initialCountries.filter((item) => 
-    !region || region === item.region
-  );
-  console.log(filteredList);
-  console.log(region);
-  
+  let filteredList = initialCountries.filter((item) => {
+    if (region){
+      return region === item.region
+    } else if (search){
+         return item.name.toLowerCase().includes(search)
+      
+    } else {
+         return true;
+    }
+    
+});
+console.log(region)
+console.log(search)
+
+   
 
   return (
     <>
