@@ -6,7 +6,7 @@ import './results.css';
 
 
 const Results = (props) => {
-    let list = props.results.map((item)=> {
+    let list = props.results.map((item) => {
         return <Result 
         key={item.id}
         id={item.id}
