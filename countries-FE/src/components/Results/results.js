@@ -8,6 +8,7 @@ import './results.css';
 const Results = (props) => {
     let list = props.results.map((item)=> {
         return <Result 
+        key={item.id}
         id={item.id}
         name={item.name}
         population={item.population}

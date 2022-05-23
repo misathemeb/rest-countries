@@ -3,6 +3,7 @@
 const initialCountries = [
     {
         id: 1,
+        url: 'usa',
         name: 'USA',
         population: '270000000',
         region: 'america',
@@ -14,6 +15,7 @@ const initialCountries = [
     },
     {
         id: 2,
+        url: 'belgium',
         name: 'belge',
         population: '273500000',
         region: 'europe',
@@ -25,6 +27,7 @@ const initialCountries = [
     },
     {
         id: 3,
+        url: 'algeria',
         name: 'algeria',
         population: '5500000',
         region: 'africa',
@@ -37,6 +40,7 @@ const initialCountries = [
     {
 
         id: 4,
+        url: 'new-zealand',
         name: 'new zealand',
         population: '3500000',
         region: 'oceania',
@@ -49,6 +53,7 @@ const initialCountries = [
     {
 
         id: 5,
+        url: 'japan',
         name: 'japan',
         population: '1000000',
         region: 'asia',

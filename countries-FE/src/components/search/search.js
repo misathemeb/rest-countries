@@ -1,6 +1,5 @@
 
 import React, { useState } from 'react';
-import SingleCountry from '../../pages/SingleCountry';
 import Results from '../Results/results';
 import initialCountries from '../../data/initialCountries';
 import { useParams, useNavigate } from 'react-router-dom';

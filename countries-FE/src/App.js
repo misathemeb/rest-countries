@@ -12,20 +12,14 @@ function App() {
   return (
   <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Search />}>
-          <Route index element={<Title />} />
-          {/*
-                location/america
-                localhost/region/europe
-                localhost/belgium
-  */}
+        <Route path='/' element={<Search />} />  
         
-          <Route path='/country/:country' element={<SingleCountry />} />
-          <Route path='/region/:region' element={<Search />} />
-          <Route path='/search/:search' element={<Search />} />
-      
-          <Route path='*' element={<Error />} />
-        </Route>
+        <Route path='country/:countryUrl' element={<SingleCountry />} />
+        <Route path='/region/:region' element={<Search />} />
+        <Route path='/search/:search' element={<Search />} /> 
+
+        <Route path='*' element={<Error />} />
+       
       </Routes>
     </BrowserRouter>
   );
