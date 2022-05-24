@@ -1,0 +1,57 @@
+
+.card-wrapper {
+    margin-top: 3rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4em;
+
+    @media (min-width: 767px) {
+    grid-template-columns: minmax(100px, 400px) 1fr;
+    align-items: center;
+    gap: 5rem;
+  }
+
+    @media (min-width: 1024px) {
+    grid-template-columns: minmax(400px, 600px) 1fr;
+  }
+}
+
+img {
+    padding: 2em;
+    height: auto;
+    width: cover;
+}
+
+.country-facts-container {
+    padding-top: 2em;
+    display: block;
+    line-height: 1.8;
+    /* display: flex;
+    flex-direction: column; */
+    width: 100%;
+
+
+}
+
+.country-title {
+    padding: 0;
+}
+
+.country-list-facts {
+    
+  
+    
+   
+
+}
+
+.country-list-fact {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    line-height: 1.8;
+  
+
+
+}

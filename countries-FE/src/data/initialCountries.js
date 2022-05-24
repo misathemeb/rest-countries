@@ -11,7 +11,8 @@ const initialCountries = [
         capital: 'washington dc',
         topleveldomain: 'usa',
         currencies: 'us dollar',
-        languages: 'english'
+        languages: 'english',
+        bordercountries: 'canada, mexico'
     },
     {
         id: 2,
@@ -23,7 +24,8 @@ const initialCountries = [
         capital: 'brussles',
         topleveldomain: 'be',
         currencies: 'euro',
-        languages: 'dutch, french, german'
+        languages: 'dutch, french, german',
+        bordercountries: 'france, germany, netherlands'
     },
     {
         id: 3,
@@ -35,7 +37,8 @@ const initialCountries = [
         capital: 'algiers',
         topleveldomain: 'al',
         currencies: 'dinar',
-        languages: 'arabic and berber'
+        languages: 'arabic and berber',
+        bordercountries: 'morocco, niger, libya'
     },
     {
 
@@ -48,7 +51,8 @@ const initialCountries = [
         capital: 'auckland',
         topleveldomain: 'nz',
         currencies: 'nz dollar',
-        languages: 'english, maori'
+        languages: 'english, maori',
+        bordercountries: 'none!'
     },
     {
 
@@ -61,7 +65,8 @@ const initialCountries = [
         capital: 'tokyo',
         topleveldomain: 'jp',
         currencies: 'jp yen',
-        languages: 'japanese'
+        languages: 'japanese',
+        bordercountries: 'none'
     }
     
 ]

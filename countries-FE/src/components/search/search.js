@@ -7,6 +7,7 @@ import Header from '../Header/header';
 import SearchBar from '../SearchBar/searchBar';
 
 
+
 const Search = () => {
 
   const [searchField, setSearchField] = useState(' ');
@@ -34,6 +35,7 @@ console.log(search)
       <Header />
       <SearchBar />
       <Results results={filteredList}/>
+
     </>
   );
 };
