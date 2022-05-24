@@ -9,8 +9,8 @@ const Header = () => {
 
     return (
         <div className='Title'>
-        <Title />
-        <Navigation />
+            <Title />
+            <Navigation />
         </div>
         
     )
