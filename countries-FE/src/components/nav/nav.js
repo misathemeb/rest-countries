@@ -33,22 +33,22 @@ import SearchBar from '../SearchBar/searchBar';
     
         return (
           <> 
-          <nav className='nav'>
-            <label for='touch'><Link to='/'></Link><span className='span-nav'>Filter by Region</span></label>
-            <input type='checkbox' id='touch'></input>
-
-            <ul className='slide'>
-              <li className='dropdown'><Link to='/region/africa'>Africa</Link></li>
-            
-              <li className='dropdown'><Link to='/region/america'>America</Link></li>
+            <nav className='nav'>
+              <label for='touch'><Link to='/'></Link><span className='span-nav'>Filter by Region</span></label>
+              <input type='checkbox' id='touch'></input>
+        
+              <ul className='slide'>
+                <li className='dropdown'><Link to='/region/africa'>Africa</Link></li>
               
-              <li className='dropdown'><Link to='/region/asia'>Asia</Link></li>
-            
-              <li className='dropdown'><Link to='/region/europe'>Europe</Link></li>
-            
-              <li className='dropdown'><Link to='/region/oceania'>Oceania</Link></li>
-            </ul>
-          </nav>
+                <li className='dropdown'><Link to='/region/america'>America</Link></li>
+                
+                <li className='dropdown'><Link to='/region/asia'>Asia</Link></li>
+              
+                <li className='dropdown'><Link to='/region/europe'>Europe</Link></li>
+              
+                <li className='dropdown'><Link to='/region/oceania'>Oceania</Link></li>
+              </ul>  
+            </nav>
           </>
         );
       };

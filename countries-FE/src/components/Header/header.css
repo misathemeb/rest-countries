@@ -27,9 +27,12 @@ li a {
     background: #d9d9d9;
   }
 
+ .nav.slide {
+     position: absolute;
+ } 
+
   .span-nav {
     padding : 1.5em;
-    border-radius: 20px;
     color : #2d2f31;
     font-size : 1em;
     cursor : pointer;
@@ -52,7 +55,7 @@ li a {
   }
   
   .slide li {
-      padding : 30px;
+      padding : 1.25em;
     }
   
   #touch {
@@ -65,11 +68,11 @@ li a {
       height: auto;
     } 
 
-
-    .dropdown li {
-        /* position:  absolute;
+   
+    .dropdown {
+         position:  relative;
         top:100%;
         left:0;
         right:0;
-        z-index:1; */
+        z-index:1; 
     }
