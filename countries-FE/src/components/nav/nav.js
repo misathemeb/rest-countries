@@ -34,17 +34,20 @@ import SearchBar from '../SearchBar/searchBar';
         return (
           <> 
           <nav className='nav'>
-            <Link to='/'>Filter by Region</Link>
-            <br></br>
-            <Link to='/region/africa'>Africa</Link>
-            <br></br>
-            <Link to='/region/america'>America</Link>
-            <br></br>
-            <Link to='/region/asia'>Asia</Link>
-            <br></br>
-            <Link to='/region/europe'>Europe</Link>
-            <br></br>
-            <Link to='/region/oceania'>Oceania</Link>
+            <label for='touch'><Link to='/'></Link><span className='span-nav'>Filter by Region</span></label>
+            <input type='checkbox' id='touch'></input>
+
+            <ul className='slide'>
+              <li className='dropdown'><Link to='/region/africa'>Africa</Link></li>
+            
+              <li className='dropdown'><Link to='/region/america'>America</Link></li>
+              
+              <li className='dropdown'><Link to='/region/asia'>Asia</Link></li>
+            
+              <li className='dropdown'><Link to='/region/europe'>Europe</Link></li>
+            
+              <li className='dropdown'><Link to='/region/oceania'>Oceania</Link></li>
+            </ul>
           </nav>
           </>
         );
