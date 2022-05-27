@@ -8,20 +8,20 @@ import Title from './components/Title/title';
 import SingleCountry from './pages/SingleCountry';
 
 function App() {
-  
-  return (
-  <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Search />} />  
-        
-        <Route path='country/:countryUrl' element={<SingleCountry />} />
-        <Route path='/region/:region' element={<Search />} />
-        <Route path='/search/:search' element={<Search />} /> 
 
-        <Route path='*' element={<Error />} />
-       
-      </Routes>
-    </BrowserRouter>
+  return (
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Search />} />  
+          
+          <Route path='country/:countryUrl' element={<SingleCountry />} />
+          <Route path='/region/:region' element={<Search />} />
+          <Route path='/search/:search' element={<Search />} /> 
+
+          <Route path='*' element={<Error />} />
+        
+        </Routes>
+      </BrowserRouter>
   );
 }
 

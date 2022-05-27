@@ -2,10 +2,15 @@ import React, { useEffect, useState } from 'react';
 import Search from '../Search/search';
 import { Link } from 'react-router-dom';
 import SearchBar from '../SearchBar/searchBar';
+import Button from '@mui/material/Button';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
 
 
  const Navigation = () => {
     const [id, type] = useState([]);
+    const [anchorEl, setAnchorEl] = useState(null);
+    const open = Boolean(anchorEl);
   
   //   const [token, setToken] = useState('');
 
@@ -16,6 +21,14 @@ import SearchBar from '../SearchBar/searchBar';
   //           getToken();
   //       }
   //     }, []);
+
+      const handleClick = (e) => {
+        setAnchorEl(e.currentTarget);
+      }
+
+      const handleClose = () => {
+        setAnchorEl(null);
+      }
    
  
       const getToken = async () => {
@@ -34,20 +47,32 @@ import SearchBar from '../SearchBar/searchBar';
         return (
           <> 
             <nav className='nav'>
-              <label for='touch'><Link to='/'></Link><span className='span-nav'>Filter by Region</span></label>
-              <input type='checkbox' id='touch'></input>
-        
-              <ul className='slide'>
-                <li className='dropdown'><Link to='/region/africa'>Africa</Link></li>
               
-                <li className='dropdown'><Link to='/region/america'>America</Link></li>
-                
-                <li className='dropdown'><Link to='/region/asia'>Asia</Link></li>
-              
-                <li className='dropdown'><Link to='/region/europe'>Europe</Link></li>
-              
-                <li className='dropdown'><Link to='/region/oceania'>Oceania</Link></li>
-              </ul>  
+
+              <Button
+                id="basic-button"
+                aria-controls={open ? 'basic-menu' : undefined}
+                aria-haspopup="true"
+                aria-expanded={open ? 'true' : undefined}
+                onClick={handleClick}
+              >
+                Filter by Region
+              </Button>
+              <Menu
+                id="basic-menu"
+                open={open}
+                anchorEl={anchorEl}
+                onClose={handleClose}
+                MenuListProps={{
+                  'aria-labelledby': 'basic-button',
+                }}
+              >
+                <MenuItem onClick={handleClose}><Link to='/region/africa'>Africa</Link></MenuItem>
+                <MenuItem onClick={handleClose}><Link to='/region/america'>America</Link></MenuItem>
+                <MenuItem onClick={handleClose}><Link to='/region/asia'>Asia</Link></MenuItem>
+                <MenuItem onClick={handleClose}><Link to='/region/europe'>Europe</Link></MenuItem>
+                <MenuItem onClick={handleClose}><Link to='/region/oceania'>Oceania</Link></MenuItem>
+              </Menu>
             </nav>
           </>
         );

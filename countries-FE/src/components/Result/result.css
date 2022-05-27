@@ -3,3 +3,7 @@
 .result li {
     list-style: none;
 }
+
+.result a {
+    text-decoration: none;
+}

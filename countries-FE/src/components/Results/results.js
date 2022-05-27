@@ -10,11 +10,8 @@ const Results = (props) => {
         return <Result 
         key={item.id}
         id={item.id}
-        name={item.name}
-        population={item.population}
-        region={item.region}
-        capital={item.capital}
-        subregion={item.subregion}/>
+        countryData = {item}
+        />
     });
     
   
