@@ -6,12 +6,13 @@ import { useParams, useNavigate } from 'react-router-dom';
 import Header from '../Header/header';
 import SearchBar from '../SearchBar/searchBar';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import {getAllCountries} from '../../api/countryFinder';
 
 
 
 const Search = () => {
 
-  const [searchField, setSearchField] = useState(' ');
+  const [searchResults, setSearchResults] = useState([]);
   const {region, search} = useParams();
 
 
@@ -49,7 +50,9 @@ const Search = () => {
     
 });
 
-
+getAllCountries().then(data => {
+  setSearchResults(data)
+})
    
 
   return (
@@ -57,10 +60,10 @@ const Search = () => {
       <ThemeProvider theme={theme}>
         <Header />
         <SearchBar />
-        <Results results={filteredList}/>
+        <Results results={searchResults}/>
       </ThemeProvider>
     </>
-  );
+  )
 };
 
 export default Search;
